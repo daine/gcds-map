@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/gcds-map.esm.js"></script>
+    <script nomodule src="/build/gcds-map.js"></script>
+
+
+    <!-- GC Design System -->
+    <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.css" />
+    <script type="module" src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.esm.js"></script>
+
+
+    <!-- GC Design System Utility -->
+    <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@latest/dist/gcds-utility.min.css" />
+
+    <!-- GCDS Map -->
+    <script type="module" src="/components/gcds-map/map-property-sheet-standalone.js"></script>
+  </head>
+  <body>
+
+  <gcds-container size="xl" main-container centered tag="main">
+    <gcds-heading tag="h2">POC - Maps</gcds-heading>
+    <gcds-map lat="45.4215" lon="-75.6972" zoom="10" projection="OSMTILE" controls controlslist="geolocation">
+      <gcds-map-layer src="/build/gcds-map/assets/mapml/en/osmtile/cbmt" checked></gcds-map-layer>
+    </gcds-map>
+  </gcds-container>
+  </body>
+</html>
